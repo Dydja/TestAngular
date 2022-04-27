@@ -1,0 +1,19 @@
+<div class="face-snap-card">
+  <h2>{{ title }}</h2>
+  <p>Mis en ligne le {{ createdDate }}</p>
+  <img [src]="imageUrl" [alt]="title" />
+  <p>{{ description }}</p>
+
+  <p>
+    <button (click)="onSnap()">{{ buttonText }}</button>
+    🤌 {{ snaps }}
+    <!-- <input (keypress)="OnAddSnap()" />Oh Snap! -->
+
+    <!-- <input type="text" id="text" placeholder="Entrez une valeur" />
+    <button type="button" (click)="getText()">Récuperons la valeur</button> -->
+  </p>
+  <!-- <p>
+    <button (click)="OnSnapDecrypt()">Dislike</button>
+    🤌 {{ dislike }}
+  </p> -->
+</div>
